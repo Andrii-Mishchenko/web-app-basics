@@ -2,7 +2,10 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const products = require('./products.json');
 
+const PORT = process.env.PORT || 4444;
+
 const app = express();
+
 app.use(express.static('public')); //вызывает в папке public статические файлы.
 
 app.set('view engine', 'hbs'); //указываем, что хотим использовать handlebars как шаблонизатор
@@ -36,8 +39,8 @@ app.get('/product/:productId', (req, res) => {
   res.render('product', { product });
 });
 
-app.listen(4444, () => {
-  console.log(`Aplication server is running on port ${4444}`);
+app.listen(PORT, () => {
+  console.log(`Aplication server is running on port ${PORT}`);
 })
 
 

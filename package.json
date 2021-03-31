@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /web-app-basics/",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build",
-    "start": "nodemon app.js"
+
+    "start": "nodemon app.js",
+    "appstart": "node app.js"
   },
   "repository": {
     "type": "git",
