@@ -1,0 +1,36 @@
+{
+  "name": "web-app-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /web-app-basics/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrii-Mishchenko/web-app-basics.git"
+  },
+  "keywords": [],
+  "author": "ANDRII_MISHCHENKO <a.mishenko2001@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrii-Mishchenko/web-app-basics/issues"
+  },
+  "homepage": "https://Andrii-Mishchenko.github.io/web-app-basics",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "gh-pages": "^3.1.0",
+    "handlebars": "^4.7.7",
+    "joi": "^17.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  }
+}
